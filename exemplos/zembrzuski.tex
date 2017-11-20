@@ -52,9 +52,9 @@ em que uma determinada pessoa frequenta.
 \chapter{Introdução}
 
 A mineração de padrões de mobilidade de indivíduos é uma
-área de pesquisa emergente. O gerenciamento eficiente
+área de pesquisa emergente \cite{lin2014mining}. O gerenciamento eficiente
 de dados espaçotemporais vem ganhando muito interesse nos
-últimos anos [B14, B16, B6, B15], principalmente devido
+últimos anos \cite{Tao:2001:MSA:645927.672363}, principalmente devido
 ao rápido avanço das telecomunicações (GPSs, dados de
 celular, etc.), que facilitam a coleta de grandes {\it datasets}
 com essas informações. O gerenciamento e análise de trajetórias
@@ -64,18 +64,18 @@ coletados e novos tipos de consultas espaçotemporais.
 Apesar das grandes dissimilaridades nas distâncias percorridas
 pelos indivíduos, desde alguns quilômetros até centenas
 de quilômetros, a mobilidade dos indivíduos mostra-se altamente
-regular [1]. Em muitos casos, os movimentos obedecem padrões
+regular \cite{song2010limits}. Em muitos casos, os movimentos obedecem padrões
 periódicos, isto é, seguem aproximadamente as mesmas rotas
 sob intervalos de tempo regulares. Por exemplo, João acorda
 mais ou menos no mesmo horário todo dia, vai ao trabalho
 pelo mesmo local todos os dias. Além disso, muitos indivíduos 
 retornam aos mesmos lugares e
 possuem a mesma função de densidade de probabilidade para
-os lugares visitados [2]. Após a remoção de outliers, as regras
+os lugares visitados. Após a remoção de outliers, as regras
 que determinam a exploração de novas localizações ou retorno a 
-lugares já visitados parecem ser muito similares [3]. Além disso,
+lugares já visitados parecem ser muito similares. Além disso,
 membros do mesmo grupo social, como pesquisadores do mesmo 
-laboratŕoio, apresentam comportamentos semelhantes [4].
+laboratŕoio, apresentam comportamentos semelhantes \cite{gonzalez08}.
 
 Mesmo assim, o problema da descoberta de padrões periódicos a partir de
 dados históricos é muito desafiador. Frequentemente, os padrões
@@ -113,7 +113,7 @@ da tarefa de mineração.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=1\textwidth]{figurinha2}
+	\includegraphics[width=1\textwidth]{figurinha2.png}
 	\caption{Padrões periódicos com respeito a regiões espaciais predefinidas. (a) Movimento do objeto (b) Um conjunto
 	de regiões predefinidas. (c) Padrões baseados em eventos.}
 	\label{crisp-dm}
@@ -149,11 +149,11 @@ da tarefa de mineração.
 %period.
 
 
-HUIPING CAO define o problema da mineração de padrões
-periódicos em dados espaçotemporais. No modelo proposto,
+No modelo proposto para mineração
+de padrões periódicos em dados temporais,
 assume-se que as localizações são amostradas por um histórico
 longo. Em outras palavras, o movimento de um objeto é capturado
-como uma sequência de tamanho n. Essa sequencia possui 
+como uma sequência de tamanho n \cite{10.1109/TKDE.2007.1002}. Essa sequencia possui 
 as coordenadas e seu respectivo {\it timestamp} na seguinte forma:
 
 
@@ -190,7 +190,7 @@ O principal objetivo do trabalho é o estudo e avaliação das principais
 técnicas encontradas no meio acadêmico para predição de padrões periódicos
 de mobilidade.
 
-Será criado um {\it dataset} com 30\% da base de dados Geolife [X],
+Será criado um {\it dataset} com 30\% da base de dados Geolife \cite{Zheng:2009:MIL:1526709.1526816},
 que contém dados de geolocalização. Este dataset será para uso exclusivo
 em {\it benchmarks} para comparação de performance das soluções propostas.
 
@@ -206,7 +206,7 @@ mais abordagens já propostas na literatura.
 
 \chapter{Metodologia}
 
-Este trabalho seguirá a tradicional metodologia CRISP-DM para projetos de ciência de dados. Tal metodologia consiste em um processo cíclico composto por seis etapas (AZEVEDO; SANTOS, 2008):
+Este trabalho seguirá a tradicional metodologia CRISP-DM para projetos de ciência de dados. Tal metodologia consiste em um processo cíclico composto por seis etapas \cite{Azevedo2008KDDSA}:
 
 \begin{figure}[h]
 	\caption{Fluxograma da metodologia CRISP-DM}
@@ -227,7 +227,7 @@ Este trabalho seguirá a tradicional metodologia CRISP-DM para projetos de ciên
 \section{Dados}
 
 Serão utilizados, para esse trabalho, dados do banco de dados Geolife. Essa base possui dados de 182 usuários, coletados
-no período de 3 anos [CITAR]. Cada usuário possui centenas deslocamentos, o que resulta num total de mais de 20 mil registros.
+no período de 3 anos. Cada usuário possui centenas deslocamentos, o que resulta num total de mais de 20 mil registros.
 
 \section{Cronograma}
 
